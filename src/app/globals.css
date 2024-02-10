@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Manrope";
+}
+
+/* HOME */
+
+.section1 {
+  background: var(--b, #1E1E1E);
+  padding: 100px 50px 0px;
+  height: 800px;
+}
+
+.grotheng {
+  color: var(--neutral-0, #FFF);
+  font-family: Manrope;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.92px;
+  padding-bottom: 20px;
+}
+
+.section1 p {
+  color: var(--neutral-300, #636363);
+
+  /* Body/16-26 */
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  /* 162.5% */
+}
+
+.sec1img {
+  /* padding: 10px; */
+  margin-top: -450px;
+  height: 573px;
+  margin-bottom: 35px;
+  /* width: 100vh; */
+}
+
+.sec1img1 {
+  /* padding: 10px; */
+  margin-top: -450px;
+  /* height: 550px; */
+  margin-bottom: 35px;
+  /* width: 100vh; */
+}
+
+.imgdiv {
+  /* border-bottom: 2px solid black; */
+}
+
+.paddleft {
+  padding-left: 0px !important;
+}
+
+.paddright {
+  padding-right: 0px !important;
+}
+
+.section2 {
+  padding: 50px 50px 80px;
+}
+
+.section2 hr {
+  margin-top: 10px;
+}
+
+.section3 {
+  padding: 0px 50px 80px;
+}
+
+/* .section3 .swiper{
+  padding-top: 15px;
+} */
+
+.section3 h1 {
+  color: var(--b, #1E1E1E);
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  /* 133.333% */
+  letter-spacing: -0.48px;
+}
+
+.trustedClient {
+  padding-top: 30px;
+}
+
+.trustlogo {
+  width: 250px;
+}
+
+
+
+.trustedClient {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section4 {
+  padding: 50px;
+  background: var(--neutral-500, #EEE);
+  /* background: url("/public/assets/Img/Cone.png"), lightgray 50% / cover no-repeat; */
+}
+
+.section4 h3 {
+  color: #000;
+  font-family: Manrope;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px;
+  /* 150% */
+  letter-spacing: -0.8px;
+}
+
+.section5 {
+  padding: 50px 50px 80px;
+}
+
+.section5 h6 {
+  color: var(--r, #FD3C3C);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  /* 228.571% */
+  letter-spacing: -0.28px;
+}
+
+.section5 h2 {
+  color: var(--b, #1E1E1E);
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  /* 133.333% */
+  letter-spacing: -0.48px;
+  padding-bottom: 30px;
+}
+
+.section5 span {
+  color: var(--r, #FD3C3C);
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.mainfeaturecard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.featurecard {
+  width: -webkit-fill-available;
+}
+
+.featureimg {
+  width: -webkit-fill-available;
+  height: 300px;
+}
+
+.featurecardfooter {
+  padding: 20px;
+  border: 1px solid var(--neutral-500, #EEE);
+  background: #FFF;
+}
+
+.featurecardfooter h4 {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  color: var(--b, #1E1E1E);
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  /* 166.667% */
+  text-transform: capitalize;
+}
+
+.featurecardfooter p {
+  color: var(--neutral-300, #636363);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  /* 200% */
+}
+
+
+.section6 {
+  padding: 50px 50px 80px;
+}
+
+.section6 h1 {
+  color: var(--b, #1E1E1E);
+  font-family: Manrope;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 70px;
+  /* 145.833% */
+  letter-spacing: -1.44px;
+}
+
+.knowmoreservice {
+  color: var(--r, #FD3C3C);
+  /* Heading/16-26 */
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  /* 162.5% */
+  border-radius: 28.5px;
+  border: 1px solid var(--r, #FD3C3C);
+  padding: 12px 50px;
+}
+
+.sec6footer {
+  display: flex;
+}
+
+.sec6footer p {
+  color: var(--neutral-300, #636363);
+
+  /* Body/16-26 */
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  /* 162.5% */
+}
+
+.albtnend {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.section7 h1 {
+  color: var(--b, #1E1E1E);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px;
+  /* 125% */
+  letter-spacing: -0.8px;
+  width: 80%;
+
+}
+
+.exprience h2 {
+  color: var(--r, #FD3C3C);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 92px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 80px;
+  /* 86.957% */
+  letter-spacing: -2.76px;
+  padding-bottom: 20px;
+}
+
+.exprience p {
+  color: var(--neutral-200, #222);
+  text-align: center;
+
+  /* Heading/24-32 */
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  /* 133.333% */
+  letter-spacing: -0.48px;
+}
+
+.expriencesection {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.section8 {
+  padding: 50px 50px 80px;
+}
+
+.contactsec h6 {
+  color: var(--r, #FD3C3C);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  /* 228.571% */
+  letter-spacing: -0.28px;
+}
+
+.contactsec h2 {
+  color: var(--b, #1E1E1E);
+  font-family: Manrope;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38px;
+  /* 135.714% */
+}
+
+.contactsec p {
+  color: var(--Accent-85, #424649);
+
+  /* Body/24-38 */
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+  /* 158.333% */
+  padding-bottom: 15px;
+}
+
+
+.contactus-btn {
+  color: #FFF;
+
+  /* Heading/16-26 */
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  /* 162.5% */
+
+  border-radius: 28.5px;
+  background: var(--r, #FD3C3C);
+  padding: 15px 40px;
+}
+
+
+
+
+
+
+
+
+
+
+.pbut {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.bookameeting-btn {
+  display: flex;
+  padding: 15px 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 28.5px;
+  background: var(--r, #FD3C3C);
+  color: #FFF;
+
+  /* Heading/16-26 */
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  /* 162.5% */
+}
+
+.grotheng span {
+  color: var(--r, #FD3C3C);
+  font-family: Manrope;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -1.92px;
+}
+
+
+.polisyssec {
+  padding: 5px 30px;
+  background-color: black;
+  color: #fff;
+  font-family: "poppins", "sans-serif";
+  font-size: 15px;
+}
+
+.sectionpadding {
+  padding: 70px 50px;
+  background-color: yellow;
+}
+
+.section1 h6 {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.section1 h2 {
+  margin-bottom: 30px;
+  font-size: 60px;
+}
+
+.section1 p {
+  font-size: 22px;
+}
+
+
+/* Footer */
+
+.footer {
+  font-family: "Manrope";
+  padding: 50px 50px 40px;
+}
+
+.footerlogo p {
+  padding-top: 20px;
+}
+
+
+.reachat h3 {
+  color: var(--b, #1E1E1E);
+  /* Heading/20-28 */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.reachat h6 {
+  color: var(--neutral-200, #222);
+  /* font-family: Manrope; */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 10px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+}
+
+.importlink h3 {
+  color: var(--b, #1E1E1E);
+  /* Heading/20-28 */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  
+}
+
+.importlink h6 {
+  color: var(--neutral-200, #222);
+  /* font-family: Manrope; */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+
+.emailAddinput {
+  border: 1px solid var(--neutral-400, #9A9A9A);
+  background: rgba(255, 255, 255, 0.10);
+
+  backdrop-filter: blur(12px);
+
+  color: var(--neutral-400, #9A9A9A);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 15px;
+  width: 70%;
+  margin-right: 20px;
+}
+
+.subEmail {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 100%;
+  background: var(--r, #FD3C3C);
+  display: flex;
+  justify-content: center;
+}
+
+.footersubarr{
+  width: 30px;
+}

@@ -1,0 +1,51 @@
+body{
+  font-family: Manrope;
+}
+.section4 {
+  /* background-image: url("../../public/assets/Img/Cone.png"); */
+  background-repeat: no-repeat;
+}
+
+.section5 .swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.section5 .swiper-button-prev {
+  /* background-image: url("../../public/assets/Img/backarrow.svg"); */
+  top: 10%;
+}
+
+.section5 .swiper-button-next {
+  /* background-image: url("../../public/assets/Img/nextarrow.svg"); */
+}
+
+.header-display{
+  background-color:#1E1E1E;
+  height: 90px;
+  width: auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-left: 55.33px;
+  padding-right: 55.66px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.list-display{
+  display: flex;
+  justify-content:space-around;
+}
+
+.list-styling{
+  color: #FFF;
+
+/* Heading/16-26 */
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 26px; /* 162.5% */
+}
+
+
+
