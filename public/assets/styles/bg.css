@@ -1,0 +1,98 @@
+.footer {
+  background-image: url("../../assets/home/footer_clip.png");
+  background-repeat: no-repeat;
+  background-position: right -18px bottom -106px;
+  background-size: cover calc(100% - 20px);
+}
+
+.services-drop-main {
+  background-image: url("../../assets/home/services-right-background.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto;
+}
+
+.industries-drop-main {
+  background-image: url("../../assets/home/services-right-background.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto;
+}
+
+.section4 {
+  background-image: url("../../assets/Img/Cone.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  /* background-size: auto calc(100% - 20px); */
+}
+
+.sectionn2 {
+  background-image: url("../../assets/home/cone-2.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  /* background-size: auto calc(100% - 20px); */
+}
+
+.insights-drop-main {
+  background-image: url("../../assets/home/insights-drop-background.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  /* background-size: auto calc(100% - 20px); */
+}
+
+.container1-wrap {
+  background-image: url("../../assets/home/recent-case-1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+}
+
+.container2-wrap {
+  background-image: url("../../assets/home/recent-case-2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+}
+
+.about-us-section3 {
+  background-image: url("../../assets/aboutUs/about_us_sec3_background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.insights-hero-section {
+  background-image: url("../../assets/insights/insights_hero_background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  /* opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.5); */
+
+}
+
+.contact-us-main {
+  /* background-image: url("../../assets/contactUs/contact_us_hero_bg_video.mp4"); */
+  /* background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; */
+  /* opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.5); */
+
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    background: none;
+  }
+
+  .section4 {
+    background: none;
+  }
+
+  .sectionn2 {
+    background: none;
+  }
+}
