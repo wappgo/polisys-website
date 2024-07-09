@@ -1,6 +1,31 @@
-import React from 'react';
+import React , {useState} from 'react';
 
 const Section2 = () => {
+
+  const[name, setName] = useState("");
+  const[email, setEmail] = useState("");
+  const[contact, setContact] = useState("");
+  const[company, setCompany] = useState("");
+  const[discription, setDiscription] = useState("");
+
+  const getContactInfo = () => {
+
+    if(name === "") {
+
+    } else if(email === "") {
+       
+    } else if(contact === "" ) {
+
+    } else if(company === "") {
+
+    } else if(discription === ""){
+
+    } else {
+
+    }
+
+  }
+
   return (
     <div>
         <div className="contact-us-section2">
@@ -38,6 +63,8 @@ const Section2 = () => {
                           placeholder="Name"
                           className="contact-us-inputs"
                           type="text"
+                          value={name}
+                          onChange={(e) => setName(e.target.value)}
                         />
                       </div>
                       <div className="col-lg-6">
@@ -45,6 +72,8 @@ const Section2 = () => {
                           placeholder="Email"
                           className="contact-us-inputs"
                           type="text"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
                         />
                       </div>
                     </div>
@@ -56,19 +85,26 @@ const Section2 = () => {
                           placeholder="Phone number"
                           className="contact-us-inputs"
                           type="text"
+                          maxLength="10"
+                          value={contact}
+                          onChange={(e) => setContact(e.target.value.replace(/[^0-9]/g, ''))}
+                          
                         />
                       </div>
                       <div className="col-lg-6">
                         <input
-                          placeholder="Phone number"
+                          placeholder="Company (optional)"
                           className="contact-us-inputs"
                           type="text"
+                          value={company}
+                          onChange={(e) => setCompany(e.target.value)}
                         />
                       </div>
                     </div>
                     <div>
                       <div className="contact-us-message-container">
-                        <textarea placeholder="Message" className="contact-us-inputs contact-us-message w-100">
+                        <textarea placeholder="Message" className="contact-us-inputs contact-us-message w-100" value={discription}
+                        onChange={(e) => setDiscription(e.target.value)}>
                         </textarea>
                       </div>
                       <div className="contact-us-consent-container-wrapper">
@@ -83,7 +119,9 @@ const Section2 = () => {
                           </p>
                         </div>
                       </div>
-                      <button className="contact-us-form-btn">
+                      <button className="contact-us-form-btn"
+                      onClick={() => getContactInfo()}
+                      >
                         Send Message
                       </button>
                     </div>

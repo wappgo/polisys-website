@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 // import "../../../public/assets/styles/style.css";
 // import Image1 from "../../../public/assets/contactUs/contact_us_section3.png";
 // import Image from "next/image";
@@ -8,6 +8,11 @@ import Section3 from "../../component/contactUsComponent/Section3";
 import Section4 from "../../component/contactUsComponent/Section4";
 
 const ContactUs = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+  
   
   return (
     <>

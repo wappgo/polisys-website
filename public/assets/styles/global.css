@@ -577,7 +577,7 @@ height: 54px; */
 .recent-case-right-arrow {
     color: white;
     font-size: 20px;
-    margin-top: -30px;
+    margin-top: -20px;
     margin-right: 30px;
     cursor: pointer;
 
@@ -2636,6 +2636,7 @@ height: 54px; */
         line-height: 20px;
         letter-spacing: -0.32px;
     }
+    
 }
 
 @media screen and (max-width: 1440px) {
@@ -2849,6 +2850,9 @@ height: 54px; */
         align-items: center;
         justify-content: center;
         margin-bottom: 20px;
+    }
+    .contact-us-main {
+        padding-top: 100px;
     }
 }
 
