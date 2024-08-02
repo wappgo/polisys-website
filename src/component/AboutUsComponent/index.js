@@ -6,6 +6,11 @@ import Section4 from "../../component/AboutUsComponent/Section4";
 import Section5 from "../../component/AboutUsComponent/Section5";
 import Section6 from "../../component/AboutUsComponent/Section6";
 import Section7 from "../../component/AboutUsComponent/Section7";
+import BannerPlaceholder from "../BannerPlaceholder";
+import BuildingFuture from "../BuildingFuture";
+import GetInTouch from '../GetInTouch';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay, Navigation } from "swiper/modules";
 
 const AboutUs = () => {
     console.log("images.about_us_sec2_img.src")
@@ -106,7 +111,7 @@ const AboutUs = () => {
         </div>
       </div> */}
       <Section3 />
-      <Section4 />
+      {/* <Section4 /> */}
       {/* <div className="about-us-section5">
         <div className="about-us-sec5-wrapper">
           <h1 className="about-us-sec5-head">The distinction that sets us Apart in the industry</h1>
@@ -200,6 +205,83 @@ const AboutUs = () => {
         </div>
       </div> */}
       <Section7 />
+      
+      <div className='abbanerpla'>
+        <BannerPlaceholder />
+      </div>
+      <BuildingFuture />
+      <div>
+      <div className="section7">
+        <center>
+          <h1>
+            As a team we strive together, collaborate and provide the best
+            experience for our clients.
+          </h1>
+        </center>
+
+        <div className="w-100">
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={10}
+          pagination={{
+            clickable: true,
+          }}
+          speed={1000}
+          autoplay={{
+            delay: 100,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
+          modules={[Autoplay]}
+          className="mySwiper"
+          loop={true}
+          breakpoints={{
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 0,
+            },
+
+            576: {
+              slidesPerView: 1,
+              spaceBetween: 0,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            1440: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          }}
+        >
+          <SwiperSlide>
+            <div className=" exprience">
+              <h2>12+</h2>
+              <p>Years of experience</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className=" exprience">
+              <h2>150+</h2>
+              <p>Project completed</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className=" exprience">
+              <h2>250+</h2>
+              <p>Leading companies</p>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+      </div>
+      </div>
+      <GetInTouch />
       </div>
       </>
     )

@@ -1,8 +1,21 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const InsightsHeadComp = () => {
+    const [insightsDisplay, setInsightsDisplay] = useState(false);
+    const [servicesDisplay, setServicesDisplay] = useState(false);
+    const [industriesDisplay, setIndustriesDisplay] = useState(false);
+
+    const handleInsightsClick = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        setInsightsDisplay(true);
+        setServicesDisplay(false);
+        setIndustriesDisplay(false);
+      };
   return (
-    <div className="d-none d-lg-block insightbgcolor">
+    <div className="d-none d-lg-block insightbgcolor" 
+        onMouseOver={handleInsightsClick}
+        
+                  >
         <div className="insights-drop-main">
         <div className="insights-drop-main-sub">
             <div className="row">
@@ -63,7 +76,7 @@ const InsightsHeadComp = () => {
                 <div className="col-lg-3">
                 <img
                      src="/assets/home/insight-drop-right-img.png"
-                     className="img-fluid"
+                     className="img-fluid imgheaimg"
                      alt="img"
                    />
                 </div>

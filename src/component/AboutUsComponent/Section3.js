@@ -1,20 +1,24 @@
 // import Image from "next/image";
-import { Image } from 'react-bootstrap';
+import { Image } from "react-bootstrap";
 // import Image2 from `${process.env.PUBLIC_URL}assets/aboutUs/about_us_sec3_right_img.png`;
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
-import { Pagination, Autoplay, Navigation, FreeMode, Thumbs } from "swiper/modules";
+import {
+  Pagination,
+  Autoplay,
+  Navigation,
+  FreeMode,
+  Thumbs,
+} from "swiper/modules";
 import { HiArrowLeft } from "react-icons/hi2";
 import { HiArrowRight } from "react-icons/hi2";
-const Image2 = `${process.env.PUBLIC_URL}assets/aboutUs/about_us_sec3_right_img.png`
+const Image2 = `${process.env.PUBLIC_URL}assets/aboutUs/about_us_sec3_right_img.png`;
 const Section3 = () => {
-
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-
 
   return (
     <div>
@@ -25,7 +29,7 @@ const Section3 = () => {
           </div>
           <div>
             <ul className="about-us-sec3-ul">
-              <Swiper
+              {/* <Swiper
                 onSwiper={thumbsSwiper}
                 // spaceBetween={130}
                 breakpoints={{
@@ -70,7 +74,15 @@ const Section3 = () => {
                 <SwiperSlide>
                   <li className="about-us-sec3-ls">Our Stories</li>
                 </SwiperSlide>
-              </Swiper>
+              </Swiper> */}
+
+              <li className="about-us-sec3-ls">Our Commitment</li>
+
+              <li className="about-us-sec3-ls">Our Context</li>
+
+              <li className="about-us-sec3-ls">Our Values</li>
+
+              <li className="about-us-sec3-ls">Our Stories</li>
             </ul>
           </div>
         </div>
@@ -134,56 +146,136 @@ const Section3 = () => {
           <SwiperSlide>
             <div className="about-us-sec3-wrap2">
               <div>
-                <h2 className="about-us-sec3-heads">Committed to a positive impact.</h2>
+                <h2 className="about-us-sec3-heads">
+                  Committed to a positive impact.
+                </h2>
                 <p className="about-us-sec3-para">
-                  Torem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
-                  Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna. Nam metus lacus.
+                  Torem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                  eu turpis molestie, dictum est a, mattis tellus. Sed
+                  dignissim, metus nec fringilla accumsan, risus sem
+                  sollicitudin lacus, ut interdum tellus elit sed risus.
+                  Maecenas eget condimentum velit, sit amet feugiat lectus.
+                  Class aptent taciti sociosqu ad litora torquent per conubia
+                  nostra, per inceptos himenaeos. Praesent auctor purus luctus
+                  enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus
+                  ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel
+                  bibendum lorem. Morbi convallis convallis diam sit amet
+                  lacinia. Aliquam in elementum tellus. Curabitur tempor quis
+                  eros tempus lacinia. Nam bibendum pellentesque quam a
+                  convallis. Sed ut vulputate nisi. Integer in felis sed leo
+                  vestibulum venenatis. Suspendisse quis arcu sem. Aenean
+                  feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna.
+                  Nam metus lacus.
                 </p>
               </div>
               <div>
-                <img className="about-us-sec3-img w-100" src={Image2} alt="Image" />
+                <img
+                  className="about-us-sec3-img w-100"
+                  src={Image2}
+                  alt="Image"
+                />
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="about-us-sec3-wrap2">
               <div>
-                <h2 className="about-us-sec3-heads">Committed to a positive impact.</h2>
+                <h2 className="about-us-sec3-heads">
+                  Committed to a positive impact.
+                </h2>
                 <p className="about-us-sec3-para">
-                  Torem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
-                  Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna. Nam metus lacus.
+                  Torem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                  eu turpis molestie, dictum est a, mattis tellus. Sed
+                  dignissim, metus nec fringilla accumsan, risus sem
+                  sollicitudin lacus, ut interdum tellus elit sed risus.
+                  Maecenas eget condimentum velit, sit amet feugiat lectus.
+                  Class aptent taciti sociosqu ad litora torquent per conubia
+                  nostra, per inceptos himenaeos. Praesent auctor purus luctus
+                  enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus
+                  ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel
+                  bibendum lorem. Morbi convallis convallis diam sit amet
+                  lacinia. Aliquam in elementum tellus. Curabitur tempor quis
+                  eros tempus lacinia. Nam bibendum pellentesque quam a
+                  convallis. Sed ut vulputate nisi. Integer in felis sed leo
+                  vestibulum venenatis. Suspendisse quis arcu sem. Aenean
+                  feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna.
+                  Nam metus lacus.
                 </p>
               </div>
               <div>
-                <img className="about-us-sec3-img w-100" src={Image2} alt="Image" />
+                <img
+                  className="about-us-sec3-img w-100"
+                  src={Image2}
+                  alt="Image"
+                />
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="about-us-sec3-wrap2">
               <div>
-                <h2 className="about-us-sec3-heads">Committed to a positive impact.</h2>
+                <h2 className="about-us-sec3-heads">
+                  Committed to a positive impact.
+                </h2>
                 <p className="about-us-sec3-para">
-                  Torem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
-                  Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna. Nam metus lacus.
+                  Torem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                  eu turpis molestie, dictum est a, mattis tellus. Sed
+                  dignissim, metus nec fringilla accumsan, risus sem
+                  sollicitudin lacus, ut interdum tellus elit sed risus.
+                  Maecenas eget condimentum velit, sit amet feugiat lectus.
+                  Class aptent taciti sociosqu ad litora torquent per conubia
+                  nostra, per inceptos himenaeos. Praesent auctor purus luctus
+                  enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus
+                  ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel
+                  bibendum lorem. Morbi convallis convallis diam sit amet
+                  lacinia. Aliquam in elementum tellus. Curabitur tempor quis
+                  eros tempus lacinia. Nam bibendum pellentesque quam a
+                  convallis. Sed ut vulputate nisi. Integer in felis sed leo
+                  vestibulum venenatis. Suspendisse quis arcu sem. Aenean
+                  feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna.
+                  Nam metus lacus.
                 </p>
               </div>
               <div>
-                <img className="about-us-sec3-img w-100" src={Image2} alt="Image" />
+                <img
+                  className="about-us-sec3-img w-100"
+                  src={Image2}
+                  alt="Image"
+                />
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="about-us-sec3-wrap2">
               <div>
-                <h2 className="about-us-sec3-heads">Committed to a positive impact.</h2>
+                <h2 className="about-us-sec3-heads">
+                  Committed to a positive impact.
+                </h2>
                 <p className="about-us-sec3-para">
-                  Torem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
-                  Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna. Nam metus lacus.
+                  Torem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                  eu turpis molestie, dictum est a, mattis tellus. Sed
+                  dignissim, metus nec fringilla accumsan, risus sem
+                  sollicitudin lacus, ut interdum tellus elit sed risus.
+                  Maecenas eget condimentum velit, sit amet feugiat lectus.
+                  Class aptent taciti sociosqu ad litora torquent per conubia
+                  nostra, per inceptos himenaeos. Praesent auctor purus luctus
+                  enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus
+                  ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel
+                  bibendum lorem. Morbi convallis convallis diam sit amet
+                  lacinia. Aliquam in elementum tellus. Curabitur tempor quis
+                  eros tempus lacinia. Nam bibendum pellentesque quam a
+                  convallis. Sed ut vulputate nisi. Integer in felis sed leo
+                  vestibulum venenatis. Suspendisse quis arcu sem. Aenean
+                  feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna.
+                  Nam metus lacus.
                 </p>
               </div>
               <div>
-                <img className="about-us-sec3-img w-100" src={Image2} alt="Image" />
+                <img
+                  className="about-us-sec3-img w-100"
+                  src={Image2}
+                  alt="Image"
+                />
               </div>
             </div>
           </SwiperSlide>
@@ -202,9 +294,94 @@ const Section3 = () => {
             </div>
           </div>
         </div>
+        <div className="polydef">
+          <h2>Polisys Defined</h2>
+        </div>
+        <div>
+          <div className="row gx-4 gy-5">
+            <div className="col-12 col-sm-12 col-md-6 col-lg-4">
+              <div className="about-polisys-def">
+                <h1>
+                  <span>P</span>olicy
+                </h1>
+                <p>
+                  Policies provide a framework within which an organization
+                  operates. They ensure consistency and compliance with
+                  regulations.
+                </p>
+              </div>
+            </div>
+            <div className="col-12 col-sm-12 col-md-6 col-lg-4">
+              <div className="about-polisys-def">
+                <h1>
+                  <span>O</span>perations
+                </h1>
+                <p>
+                  Operations encompass all the processes and tasks that
+                  transform inputs into outputs. This includes quality control,
+                  and management.
+                </p>
+              </div>
+            </div>
+            <div className="col-12 col-sm-12 col-md-6 col-lg-4">
+              <div className="about-polisys-def">
+                <h1>
+                  <span>L</span>ogistics
+                </h1>
+                <p>
+                  Logistics involve the planning, execution, and management of
+                  the movement and storage of goods, services, and information.
+                </p>
+              </div>
+            </div>
+            {/* <div className="row"> */}
+            <div className="col-12 col-sm-12 col-md-6 col-lg-6">
+              <div className="about-polisys-def">
+                <h1>
+                  <span>I</span>nformation
+                </h1>
+                <p>
+                Information is critical for decision-making and strategic planning. It includes data collection, analysis, dissemination, and management to support organizational objectives.
+                </p>
+              </div>
+            </div>
+            <div className="col-12 col-sm-12 col-md-6 col-lg-6">
+              <div className="about-polisys-def">
+                <h1>
+                  <span>S</span>ystems
+                </h1>
+                <p>
+                Information is critical for decision-making and strategic planning. It includes data collection, analysis, dissemination, and management to support organizational objectives.
+                </p>
+              </div>
+            </div>
+
+            <div className="col-12 col-sm-12 col-md-6 col-lg-6">
+              <div className="about-polisys-def">
+                <h1>
+                  <span>Y</span>ield
+                </h1>
+                <p>
+                Yield measures the effectiveness and efficiency of operations. It is a critical performance metric used to evaluate productivity, profitability, and resource utilization.
+                </p>
+              </div>
+            </div>
+            <div className="col-12 col-sm-12 col-md-6 col-lg-6">
+              <div className="about-polisys-def">
+                <h1>
+                  <span>S</span>trategy
+                </h1>
+                <p>
+                Yield measures the effectiveness and efficiency of operations. It is a critical performance metric used to evaluate productivity, profitability, and resource utilization.
+                </p>
+              </div>
+            </div>
+            {/* </div> */}
+          </div>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Section3
+export default Section3;

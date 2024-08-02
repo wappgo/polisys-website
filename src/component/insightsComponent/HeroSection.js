@@ -17,7 +17,7 @@ const HeroSection = () => {
         <div className="row w-100">
           <div className='col-lg-12'>
           <p className="insights-hero-tag">
-          Insights
+          Dark-Eye
           </p> 
           <h1 className="insights-hero-heading">
           Technology

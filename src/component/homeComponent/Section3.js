@@ -8,11 +8,15 @@ import { Pagination, Autoplay, Navigation } from "swiper/modules";
 const Section3 = () => {
   return (
     <div className="section3">
-        <h1>Our Trusted Client</h1>
+        <h1 className="ourtrust">Our Trusted Client</h1>
         <div className="section3-container">
           <div className="row trustedClient">
             <div className="col-12">
-              <Swiper
+
+              <h2 className="cliensec">Sorry ! We never reveal our clients ! Because here we work for their privacy 🔐 .</h2>
+
+              
+              {/*<Swiper
                 slidesPerView={4}
                 spaceBetween={10}
                 pagination={{
@@ -83,7 +87,7 @@ const Section3 = () => {
                     alt="Logo 4"
                   />
                 </SwiperSlide>
-              </Swiper>
+              </Swiper> */}
             </div>
           </div>
         </div>

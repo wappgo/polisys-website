@@ -110,8 +110,8 @@ const Insights = () => {
           </div>
         </div> */}
         <Section5 />
-        <Section6 />
-        <Section7 />
+        <Section6 /> 
+        {/* <Section7 /> */}
         <Section8 />
         <Section9 />
         {/* <div className="insights-section10">
@@ -160,7 +160,7 @@ const Insights = () => {
             </div>
           </div>
         </div> */}
-        <Section10 />
+        {/* <Section10 /> */}
         <Section11 />
       </div>
     </>

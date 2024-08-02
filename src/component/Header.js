@@ -18,6 +18,8 @@ const Header = () => {
   const [insightsDisplay, setInsightsDisplay] = useState(false);
   const [servicesDisplay, setServicesDisplay] = useState(false);
   const [industriesDisplay, setIndustriesDisplay] = useState(false);
+  const [aboutDisplay, setAboutDisplay] = useState(false);
+  const [contactDisplay, setContactDisplay] = useState(false);
 
   // const pathName = usePathname();
   const router = useNavigate();
@@ -30,12 +32,19 @@ const Header = () => {
     setServicesDisplay(false);
     setIndustriesDisplay(false);
   };
-  const handleMouseinsightsDisplay = () => {
+  const handleInsightsClick1 = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setInsightsDisplay(true);
+    setServicesDisplay(false);
+    setIndustriesDisplay(false);
+  };
+  const handleInsightsClick2 = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
     setInsightsDisplay(false);
-    // setServicesDisplay(false);
-    // setIndustriesDisplay(false);
+    setServicesDisplay(false);
+    setIndustriesDisplay(false);
+  };
 
-  }
 
   const handleServicesClick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -45,10 +54,43 @@ const Header = () => {
     setIndustriesDisplay(false);
   };
 
+  const handleServicesClick1 = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+    setServicesDisplay(true);
+    setInsightsDisplay(false);
+    setIndustriesDisplay(false);
+  };
+
+  const handleServicesClick2 = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+    setServicesDisplay(false);
+    setInsightsDisplay(false);
+    setIndustriesDisplay(false);
+  };
+
+
   const handleIndustriesClick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 
     setIndustriesDisplay(!industriesDisplay);
+    setServicesDisplay(false);
+    setInsightsDisplay(false);
+  };
+
+  const handleIndustriesClick1 = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+    setIndustriesDisplay(true);
+    setServicesDisplay(false);
+    setInsightsDisplay(false);
+  };
+
+  const handleIndustriesClick2 = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+    setIndustriesDisplay(false);
     setServicesDisplay(false);
     setInsightsDisplay(false);
   };
@@ -59,6 +101,46 @@ const Header = () => {
     setIndustriesDisplay(false);
     // router("/contact-us")
   };
+
+  const handleAboutClick1 = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+    setAboutDisplay(true)
+    setServicesDisplay(false);
+    setInsightsDisplay(false);
+    setIndustriesDisplay(false);
+  }
+
+  const handleAboutClick2 = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+    setAboutDisplay(false)
+    setServicesDisplay(false);
+    setInsightsDisplay(false);
+    setIndustriesDisplay(false);
+  }
+  
+
+  const handleContactClick1 = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+    setContactDisplay(true)
+    setAboutDisplay(false)
+    setServicesDisplay(false);
+    setInsightsDisplay(false);
+    setIndustriesDisplay(false);
+  } 
+
+  const handleContactClick2 = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+    setContactDisplay(false)
+    setAboutDisplay(false)
+    setServicesDisplay(false);
+    setInsightsDisplay(false);
+    setIndustriesDisplay(false);
+  } 
+
   return (
     <>
       {/* <head>
@@ -90,44 +172,57 @@ const Header = () => {
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
             <div className="header-desktop-display">
               <div className="header-list-wrap mt-2">
                 <ul className="navbar-nav mr-auto list-display">
-                  <li onClick={handleInsightsClick}  >
+                  <li onClick={handleInsightsClick} 
+                  onMouseEnter={handleInsightsClick1}
+                  onMouseLeave={handleInsightsClick2}
+                 >
                     <Link
                       className={
-                        splitLocation[1] === "insights"
+                        splitLocation[1] === "darkeye" || insightsDisplay
                           ? "list-styling-active"
                           : "list-styling"
                       }
-                      to="/insights"
+                      to="/darkeye"
                     >
-                      Insights
+                      Dark-Eye
                     </Link>
                   </li>
-                  <li onClick={handleServicesClick}>
-                    <Link className={splitLocation[1] === "services" ? "list-styling-active" : "list-styling"} to="#">
+                  <li onClick={handleServicesClick}
+                  onMouseEnter={handleServicesClick1}
+                  onMouseLeave={handleServicesClick2}>
+                    <Link className={splitLocation[1] === "services" || servicesDisplay ? "list-styling-active" : "list-styling"} to="services">
                       Services
                     </Link>
                   </li>
-                  <li onClick={handleIndustriesClick}>
-                    <Link className={splitLocation[1] === "industries" ? "list-styling-active" : "list-styling"} to="#">
-                      Industries
+                  <li onClick={handleIndustriesClick}
+                  onMouseEnter={handleIndustriesClick1}
+                  onMouseLeave={handleIndustriesClick2}>
+                    <Link className={splitLocation[1] === "strengths" || industriesDisplay ? "list-styling-active" : "list-styling"} to="#">
+                      Strengths
                     </Link>
                   </li>
-                  <li onClick={headerClickHandler}>
+                   {/* <li onClick={headerClickHandler}>
                     <Link className={splitLocation[1] === "careers" ? "list-styling-active" : "list-styling"} to="#">
                       Careers
                     </Link>
-                  </li>
-                  <li onClick={headerClickHandler}>
-                    <Link className={splitLocation[1] === "about-us" ? "list-styling-active" : "list-styling"} to="/about-us">
+                  </li> */}
+                  <li onClick={headerClickHandler}
+                  onMouseEnter={handleAboutClick1}
+                  onMouseLeave={handleAboutClick2}
+                  >
+                    <Link className={splitLocation[1] === "about-us" || aboutDisplay ? "list-styling-active" : "list-styling"} to="/about-us">
                       About Us
                     </Link>
                   </li>
-                  <li onClick={headerClickHandler}>
-                    <Link className={splitLocation[1] === "contact-us" ? "list-styling-active" : "list-styling"} to="/contact-us">
+                  <li onClick={headerClickHandler}
+                  onMouseEnter={handleContactClick1}
+                  onMouseLeave={handleContactClick2}
+                  >
+                    <Link className={splitLocation[1] === "contact-us" || contactDisplay ? "list-styling-active" : "list-styling"} to="/contact-us">
                       Contact Us
                     </Link>
                   </li>
@@ -136,8 +231,8 @@ const Header = () => {
             </div>
             <div className="header-mobile-display">
             </div>
-            <div className="list-styling headerleftcon">
-              <div class="headerleftcon2">
+            <div className="list-styling headerleftcon m-0" >
+              <div class="headerleftcon2" style={{"visibility": "hidden"}}>
                 <img
                   width="24px"
                   height="24px"
@@ -160,7 +255,8 @@ const Header = () => {
           <div className="insight-transform" >
 
             <div
-              onMouseLeave={handleMouseinsightsDisplay}
+              onMouseEnter={handleInsightsClick1}
+              onMouseLeave={handleInsightsClick2}
               style={{
                 transform: `${insightsDisplay ? "translateY(0px)" : "translateY(-742px)"
                   }`,
@@ -173,6 +269,8 @@ const Header = () => {
           <div className="services-transform">
             <div
               // onMouseOut={handleMouseservicesDisplay}
+              onMouseEnter={handleServicesClick1}
+                  onMouseLeave={handleServicesClick2}
               style={{
                 transform: `${servicesDisplay ? "translateY(-325px)" : "translateY(-920px)"
                   }`,
@@ -185,7 +283,8 @@ const Header = () => {
           <div className="indusries-transform">
             <div
               // onMouseOut={handleMouseindustriesDisplay}
-
+              onMouseEnter={handleIndustriesClick1}
+              onMouseLeave={handleIndustriesClick2}
               style={{
                 transform: `${industriesDisplay
                   ? "translateY(-652px)"

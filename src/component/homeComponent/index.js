@@ -21,6 +21,7 @@ import Section8 from "./Section8.js";
 import Section9 from "./Section9.js";
 import Section10 from "./Section10.js";
 import Section11 from "./Section11.js";
+import Section12 from "./Section12.js";
 
 export default function Home() {
   return (
@@ -60,9 +61,9 @@ export default function Home() {
           </div>
         </div>
       </div> */}
-      <Section1 />
-      <div className="section2"></div>
-      <hr className="divider_hr2" />
+      <Section1 /> 
+      {/*<div className="section2"></div>*/}
+      
 
       {/* <div className="section3">
         <h1>Our Trusted Client</h1>
@@ -145,7 +146,11 @@ export default function Home() {
           </div>
         </div>
       </div> */}
+
+      <hr className="divider_hr2" />
       <Section3 />
+
+      <hr className="divider_hr2" />
 
       {/* <div className="section4">
         <h3>
@@ -745,7 +750,7 @@ export default function Home() {
         </Swiper>
       </div> */}
        <Section7 />
-
+       
       {/* <div className="sectionn2-container">
         <div className="sectionn2">
           <div className="row">
@@ -913,6 +918,7 @@ export default function Home() {
         </div>
       </div> */}
       <Section8 />
+      <Section12 />
       {/* <div className="sectionn3">
         <div className="row">
           <div className="col-md-4 p-0">

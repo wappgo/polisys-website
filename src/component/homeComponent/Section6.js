@@ -21,9 +21,11 @@ const Section6 = () => {
             </p>
           </div>
           <div className="col-md-4 mobile-view-align">
+          <div className="knowmoreservbtn">
             <button onClickCapture={()=>router("/services")} className="knowmoreservice">
               Know more about Services
             </button>
+            </div>
           </div>
         </div>
       </div>

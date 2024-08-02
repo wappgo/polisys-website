@@ -8,7 +8,7 @@ const Section11 = () => {
   return (
     <div className="section8">
         <div className="row contactsec">
-          <div className=" col-sm-7">
+          <div className="col-12 col-sm-12 col-md-12 col-lg-8">
             <h6>LET’S TALK</h6>
 
             <h2>Get in touch with us</h2>
@@ -23,7 +23,7 @@ const Section11 = () => {
 
             <button onClickCapture={()=>router("/contact-us")} className="contactus-btn">Contact Us</button>
           </div>
-          <div className="col-5 col-md-5">
+          <div className="col-12 col-sm-12 col-md-12 col-lg-4">
             <div className="contact-us-img">
               <img className="" src="/assets/Img/contactimg.png" />
             </div>
