@@ -1,8 +1,10 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
+import Counter from "../Counter";
 
 const Section10 = () => {
+
   return (
     <div className="section7">
       <center>
@@ -54,23 +56,24 @@ const Section10 = () => {
         >
           <SwiperSlide>
             <div className=" exprience">
-              <h2>12+</h2>
+              <h2><Counter end={12} duration={5} /></h2>
               <p>Years of experience</p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className=" exprience">
-              <h2>150+</h2>
+              <h2><Counter end={150} duration={5} /></h2>
               <p>Project completed</p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className=" exprience">
-              <h2>250+</h2>
+              <h2><Counter end={250} duration={5} /></h2>
               <p>Leading companies</p>
             </div>
           </SwiperSlide>
         </Swiper>
+       
       </div>
     </div>
   );

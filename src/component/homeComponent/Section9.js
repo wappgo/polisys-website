@@ -42,6 +42,11 @@ const Section9 = () => {
                 nextEl: ".four-swiper-button-next",
                 prevEl: ".four-swiper-button-prev",
               }}
+              autoplay= {{
+              // delay: 2000,
+              //   disableOnInteraction: false,
+              //   pauseOnMouseEnter:true
+              }}
               className="mySwiper depknow orexp"
               loop={true}
               breakpoints={{
@@ -106,10 +111,10 @@ const Section9 = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="sectionn-right-container ">
-                  <div className="sec3-right-sub-contain">
+                <div className="sectionn-right-container depnol">
+                  <div className="sec3-right-sub-contain pt-0">
                     <h1 className="sec3-right-head">
-                      Deep knowledge in the field
+                     #2 Deep knowledge in the field
                     </h1>
                     <p className="sec-3-right-p">
                       Our extensive experience and deep expertise in the energy
@@ -121,7 +126,10 @@ const Section9 = () => {
                       enables us to provide innovative, tailored solutions that
                       not only meet but exceed the expectations of our clients.
                     </p>
-                    <div className="mr-4">
+                    <p className="sec-3-right-p pt-0">
+                    Our commitment to excellence is reflected in the quality of service we offer. We believe that thorough knowledge is the foundation of exceptional service, and we leverage our expertise to exceed client expectations consistently. By staying informed and adaptable, we can anticipate changes and provide proactive solutions that drive success. At [Your Company Name], you can trust that our deep industry knowledge will be your asset in achieving your goals and navigating the ever-evolving landscape.
+                    </p>
+                    {/* <div className="mr-4">
                       <p className="sec-3-right-date d-flex">
                         <img
                           src="/assets/home/calendar.svg"
@@ -135,11 +143,11 @@ const Section9 = () => {
                       <div className="col-md-10 mobile-view-align">
                         <button className="sec-3-right-btn">
                           Read Full Article
-                          {/* <img src={images.article_arrow.default} /> */}
+                          <img src={images.article_arrow.default} />
                           <img src='./assets/home/article-arrow.svg' />
                         </button>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </SwiperSlide>

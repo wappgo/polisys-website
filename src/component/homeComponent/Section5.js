@@ -7,7 +7,9 @@ import { Pagination, Autoplay, Navigation } from "swiper/modules";
 // import Image from "next/image";
 import SlideSwiper from "../../component/swiper";
 
+
 const Section5 = () => {
+  
   return (
     <div className="section5">
         <h6>INSIGHTS CORNER</h6>
@@ -51,6 +53,12 @@ const Section5 = () => {
               nextEl: ".one-swiper-button-next",
               prevEl: ".one-swiper-button-prev",
             }}
+            autoplay= {{
+              delay: 1000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter:true
+            }}
+            pauseOnMouseEnter= {true}
             className="mySwiper"
             loop={true}
             breakpoints={{
@@ -75,6 +83,7 @@ const Section5 = () => {
                 spaceBetween: 30,
               },
             }}
+            
           >
             <SwiperSlide>
               <div className="featurecard">
@@ -114,6 +123,20 @@ const Section5 = () => {
                   <h4>Finance & Wealth</h4>
                   <p>
                   We provide expert financial and wealth management services. Our advisors specialize in investment planning, retirement strategies, and asset management. We secure your financial future with personalized solutions.
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="featurecard">
+                <div>
+                  <img className="img-fluid featimg m-0" src="/assets/Img/sybersyc.png" />
+                </div>
+                <div className="featurecardfooter">
+                  <span>#4 insights</span> 
+                  <h4>Information & Technology</h4>
+                  <p>
+                  We provide innovative IT solutions to enhance productivity and streamline operations. Partner with us for reliable, cutting-edge technology that empowers your business to thrive.
                   </p>
                 </div>
               </div>

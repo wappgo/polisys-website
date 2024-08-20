@@ -28,7 +28,7 @@ const Section2 = () => {
 
   return (
     <div>
-        <div className="contact-us-section2">
+        <div className="contact-us-section2 mb-5">
           <div>
             <div className="row">
               <div className="col-lg-5">

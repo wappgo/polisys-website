@@ -236,6 +236,10 @@ const Section8 = () => {
                 perPage: 3,
                 arrows: false,
                 pagination: false,
+                autoplay: true, // Enables autoplay
+    // interval: 3000, // Sets the delay between transitions (in milliseconds)
+    type: 'loop', // Allows infinite scrolling
+    pauseOnHover: true, // Optional: pauses autoplay when hovering over the carousel
                 breakpoints: {
                   1300: {
                     perPage: 2,

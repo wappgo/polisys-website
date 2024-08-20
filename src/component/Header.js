@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { images } from "./constant/index.js";
 // import Link from "next/link";
 // import Head from "next/head";
@@ -26,6 +26,9 @@ const Header = () => {
   const location = useLocation();
   const { pathname } = location;
   const splitLocation = pathname.split("/");
+
+  useEffect(() => { },[location])
+ 
   const handleInsightsClick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
     setInsightsDisplay(!insightsDisplay);
@@ -198,13 +201,13 @@ const Header = () => {
                       Services
                     </Link>
                   </li>
-                  <li onClick={handleIndustriesClick}
+                  {/* <li onClick={handleIndustriesClick}
                   onMouseEnter={handleIndustriesClick1}
                   onMouseLeave={handleIndustriesClick2}>
                     <Link className={splitLocation[1] === "strengths" || industriesDisplay ? "list-styling-active" : "list-styling"} to="#">
                       Strengths
                     </Link>
-                  </li>
+                  </li> */}
                    {/* <li onClick={headerClickHandler}>
                     <Link className={splitLocation[1] === "careers" ? "list-styling-active" : "list-styling"} to="#">
                       Careers
@@ -258,7 +261,7 @@ const Header = () => {
               onMouseEnter={handleInsightsClick1}
               onMouseLeave={handleInsightsClick2}
               style={{
-                transform: `${insightsDisplay ? "translateY(0px)" : "translateY(-742px)"
+                transform: `${insightsDisplay && false ?  "translateY(0px)" : "translateY(-742px)"
                   }`,
                 transition: "transform 0.8s ease",
               }}
@@ -272,7 +275,7 @@ const Header = () => {
               onMouseEnter={handleServicesClick1}
                   onMouseLeave={handleServicesClick2}
               style={{
-                transform: `${servicesDisplay ? "translateY(-325px)" : "translateY(-920px)"
+                transform: `${servicesDisplay && splitLocation[1] != "services" ? "translateY(-325px)" : "translateY(-920px)"
                   }`,
                 transition: "transform 0.8s ease-in-out",
               }}
@@ -286,7 +289,7 @@ const Header = () => {
               onMouseEnter={handleIndustriesClick1}
               onMouseLeave={handleIndustriesClick2}
               style={{
-                transform: `${industriesDisplay
+                transform: `${industriesDisplay && splitLocation[1] != "services"
                   ? "translateY(-652px)"
                   : "translateY(-1240px)"
                   }`,

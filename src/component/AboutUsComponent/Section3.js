@@ -110,6 +110,11 @@ const Section3 = () => {
             "--swiper-navigation-color": "#fff",
             "--swiper-pagination-color": "#fff",
           }}
+          autoplay={{
+            delay: 100,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
           navigation={{
             nextEl: ".five-swiper-button-next",
             prevEl: ".five-swiper-button-prev",

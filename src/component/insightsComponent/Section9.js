@@ -60,6 +60,11 @@ const Section9 = () => {
             nextEl: ".insights-swiper-button-next",
             prevEl: ".insights-swiper-button-prev",
           }}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false, // Optional: keeps autoplay running even after user interactions
+            pauseOnMouseEnter:true
+          }}
           className="mySwiper"
           loop={true}
           breakpoints={{

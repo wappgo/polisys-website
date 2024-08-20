@@ -22,13 +22,17 @@ const Section1 = () => {
 
   return (
     <div className='section1home backlineargr'style={{position:'relative'}}>
-      {/* <video  ref={videoRef} style={{ width: "100%", height: "100%", filter: "brightness(0.5)" }} src="/assets\home\3163534-hd_1920_1080_30fps.mp4" autoPlay loop muted /> */}
+      <video  ref={videoRef} style={{ width: "100%", height: "100%", filter: "brightness(0.5)" }} src="/assets\home\homelandingbackgrond.mp4" autoPlay loop muted />
       <div className="section1">
+
+        <div className='row'>
+<div className='col-12 col-sm-12 col-md-12 col-lg-6'>
+
+
 
         <div className="">
           <h1 className="grotheng">
-            <span>Growth Engine</span>for policy innovation and political
-            advancement .
+            <span>Growth Engine</span>for policy innovation and political advancement .
           </h1>
           <div className="sec1-head-background">
 
@@ -36,14 +40,14 @@ const Section1 = () => {
         </div>
 
         <div className="row">
-          <div className="col-md-7">
-            <p>
+          <div className="col-md-12">
+            <p className='growthpara'>
               Lorem ipsum dolor sit amet consectetur. Tellus orci cum turpis
               augue elementum. Imperdiet sodales semper ut mattis dolor
               convallis. Lorem consectetur montes lectus amet.
             </p>
           </div>
-          <div className="col-md-5">
+          <div className="col-md-12">
             <div className="text-center mobile-view-align bookmetbtnres" style={{zIndex:"10",position:"relative"}}>
               <button onClickCapture={() => router("/contact-us")} className="bookameeting-btn">Book A Meeting</button>
               
@@ -64,6 +68,9 @@ const Section1 = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        </div>
         </div>
         {/*<div className=" imgdiv">
           <div className="row">

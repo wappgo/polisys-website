@@ -93,6 +93,11 @@ const Section7 = () => {
           nextEl: ".two-swiper-button-next",
           prevEl: ".two-swiper-button-prev",
         }}
+        autoplay={{
+            delay: 100,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
         className="mySwiper"
         loop={true}
         breakpoints={{

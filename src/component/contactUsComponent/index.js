@@ -157,11 +157,11 @@ const ContactUs = () => {
             </div>
           </div>
         </div> */}
-        <Section3 />
+        {/* <Section3 /> */}
         {/* <div className="contact-us-section4">
           <Image src={Image1} style={{width:"100%"}}/>
         </div> */}
-        <Section4 />
+        {/* <Section4 /> */}
       </div>
     </>
   );

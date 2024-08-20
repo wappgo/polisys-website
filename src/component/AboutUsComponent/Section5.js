@@ -23,6 +23,11 @@ const Section5 = () => {
                 modules={[Autoplay, Navigation]}
                 className="mySwiper"
                 loop={true}
+                autoplay={{
+            delay: 100,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
                 breakpoints={{
                   320: {
                     slidesPerView: 1,

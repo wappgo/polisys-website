@@ -11,6 +11,7 @@ import BuildingFuture from "../BuildingFuture";
 import GetInTouch from '../GetInTouch';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
+import Counter from '../Counter';
 
 const AboutUs = () => {
     console.log("images.about_us_sec2_img.src")
@@ -207,7 +208,7 @@ const AboutUs = () => {
       <Section7 />
       
       <div className='abbanerpla'>
-        <BannerPlaceholder />
+        {/* <BannerPlaceholder /> */}
       </div>
       <BuildingFuture />
       <div>
@@ -261,19 +262,19 @@ const AboutUs = () => {
         >
           <SwiperSlide>
             <div className=" exprience">
-              <h2>12+</h2>
+              <h2><Counter end={12} duration={5} /></h2>
               <p>Years of experience</p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className=" exprience">
-              <h2>150+</h2>
+              <h2><Counter end={150} duration={5} /></h2>
               <p>Project completed</p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className=" exprience">
-              <h2>250+</h2>
+              <h2><Counter end={250} duration={5} /></h2>
               <p>Leading companies</p>
             </div>
           </SwiperSlide>

@@ -141,7 +141,7 @@ const index = () => {
         </div>
 
         <div>
-          <BannerPlaceholder />
+          {/* <BannerPlaceholder /> */}
         </div>
 
         <div>

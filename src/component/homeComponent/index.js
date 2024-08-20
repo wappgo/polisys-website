@@ -918,7 +918,7 @@ export default function Home() {
         </div>
       </div> */}
       <Section8 />
-      <Section12 />
+      {/* <Section12 /> */}
       {/* <div className="sectionn3">
         <div className="row">
           <div className="col-md-4 p-0">

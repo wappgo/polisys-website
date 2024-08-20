@@ -1,4 +1,7 @@
 import React from 'react'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay, Navigation } from "swiper/modules";
+import Counter from './Counter';
 
 const OurExperience = () => {
     return (
@@ -12,20 +15,65 @@ const OurExperience = () => {
                 </center>
 
                 <div className="row  w-100">
-                    <div className="col-lg-4 exprience">
-                        <h2>12+</h2>
-                        <p>Years of experience</p>
-                    </div>
+                <Swiper
+          slidesPerView={3}
+          spaceBetween={10}
+          pagination={{
+            clickable: true,
+          }}
+          speed={1000}
+         
+          modules={[Autoplay]}
+          autoplay={{
+            delay: 100,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
+          className="mySwiper"
+          loop={true}
+          breakpoints={{
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 0,
+            },
 
-                    <div className="col-lg-4 exprience">
-                        <h2>150+</h2>
-                        <p>Project completed</p>
-                    </div>
-
-                    <div className="col-lg-4 exprience">
-                        <h2>250+</h2>
-                        <p>Leading companies</p>
-                    </div>
+            576: {
+              slidesPerView: 1,
+              spaceBetween: 0,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            1440: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          }}
+        >
+          <SwiperSlide>
+            <div className=" exprience">
+              <h2><Counter end={12} duration={5} /></h2>
+              <p>Years of experience</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className=" exprience">
+              <h2><Counter end={150} duration={5} /></h2>
+              <p>Project completed</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className=" exprience">
+              <h2><Counter end={250} duration={5} /></h2>
+              <p>Leading companies</p>
+            </div>
+          </SwiperSlide>
+        </Swiper>
                 </div>
             </div>
         </div>
