@@ -52,7 +52,7 @@ body {
 }
 .section1 {
     background: var(--b, #1E1E1E);
-    padding: 230px 50px 151px;
+    padding: 100px 0px 0px 50px;
     /* z-index: 100; */
     position: relative;
     background: none;
@@ -5568,6 +5568,24 @@ margin-bottom: 45px;
 .hoverColor {
     color: #FD3C3C !important;
 }
+
+.framebg {
+    background-image: url("../home/Frame.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 20;
+}
+
+.homelan{
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
   @media screen and (max-width: 1366px) {
     .saplidcrawl {
         padding: 0px 0px 0px 0px !important;
@@ -5701,6 +5719,13 @@ margin-bottom: 45px;
         top: 7%;
     }
 
+    .homelan {
+        height: auto; 
+    }
+
+    .section1 {
+        padding: 160px 30px 60px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -5884,7 +5909,9 @@ margin-bottom: 45px;
     .importlink h3 {
         margin-top: 20px;
     }
-    
+    .backlineargr::after {
+        background: none !important;
+    }
 }
 
 @media screen and (max-width: 631px) {

@@ -1,6 +1,6 @@
-import React, { useEffect,useRef } from 'react';
+import React, { useEffect, useRef } from "react";
 // import { useRouter } from 'next/navigation';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const Section1 = () => {
   const videoRef = useRef(null);
@@ -21,56 +21,73 @@ const Section1 = () => {
   }, []);
 
   return (
-    <div className='section1home backlineargr'style={{position:'relative'}}>
-      <video  ref={videoRef} style={{ width: "100%", height: "100%", filter: "brightness(0.5)" }} src="/assets\home\homelandingbackgrond.mp4" autoPlay loop muted />
+    <div className="section1home backlineargr" style={{ position: "relative" }}>
+      <video
+        ref={videoRef}
+        style={{ width: "100%", height: "100%", filter: "brightness(0.5)" }}
+        src="/assets\home\homelandingbackgrond.mp4"
+        autoPlay
+        loop
+        muted
+      />
       <div className="section1">
-
-        <div className='row'>
-<div className='col-12 col-sm-12 col-md-12 col-lg-6'>
-
-
-
-        <div className="">
-          <h1 className="grotheng">
-            <span>Growth Engine</span>for policy innovation and political advancement .
-          </h1>
-          <div className="sec1-head-background">
-
-          </div>
-        </div>
-
-        <div className="row">
-          <div className="col-md-12">
-            <p className='growthpara'>
-              Lorem ipsum dolor sit amet consectetur. Tellus orci cum turpis
-              augue elementum. Imperdiet sodales semper ut mattis dolor
-              convallis. Lorem consectetur montes lectus amet.
-            </p>
-          </div>
-          <div className="col-md-12">
-            <div className="text-center mobile-view-align bookmetbtnres" style={{zIndex:"10",position:"relative"}}>
-              <button onClickCapture={() => router("/contact-us")} className="bookameeting-btn">Book A Meeting</button>
-              
+        <div className="row m-0">
+          <div className="col-12 col-sm-12 col-md-12 col-lg-6">
+          <div className="homelan">
+          <div>
+            <div className="">
+              <h1 className="grotheng">
+                <span>Growth Engine</span>for policy innovation and political
+                advancement .
+              </h1>
+              <div className="sec1-head-background"></div>
             </div>
 
-            <div className='onlymob'>
-              <p className="homor">or</p>
-              <div className='d-flex justify-content-center'>
-                <button className='whatbtn'>
-                  <img src='/assets/home/icon _whatsapp.svg' />
-                </button>
-                <button className='whatbtn'>
-                  <img src='/assets/home/mail.svg' />
-                </button>
-                <button className='whatbtn'>
-                  <img src='/assets/home/call.svg' />
-                </button>
+            <div className="row">
+              <div className="col-md-12">
+                <p className="growthpara">
+                  Lorem ipsum dolor sit amet consectetur. Tellus orci cum turpis
+                  augue elementum. Imperdiet sodales semper ut mattis dolor
+                  convallis. Lorem consectetur montes lectus amet.
+                </p>
+              </div>
+              <div className="col-md-12">
+                <div
+                  className="text-center mobile-view-align bookmetbtnres"
+                  style={{ zIndex: "10", position: "relative" }}
+                >
+                  <button
+                    onClickCapture={() => router("/contact-us")}
+                    className="bookameeting-btn"
+                  >
+                    Book A Meeting
+                  </button>
+                </div>
+
+                <div className="onlymob">
+                  <p className="homor">or</p>
+                  <div className="d-flex justify-content-center">
+                    <button className="whatbtn">
+                      <img src="/assets/home/icon _whatsapp.svg" />
+                    </button>
+                    <button className="whatbtn">
+                      <img src="/assets/home/mail.svg" />
+                    </button>
+                    <button className="whatbtn">
+                      <img src="/assets/home/call.svg" />
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
+            </div>
+            </div>
           </div>
-        </div>
-
-        </div>
+          <div className="col-12 col-sm-12 col-md-12 col-lg-6">
+            <div className="framebg">
+              {/* <img src="/assets/home/frame.png" /> */}
+            </div>
+          </div>
         </div>
         {/*<div className=" imgdiv">
           <div className="row">
@@ -87,8 +104,7 @@ const Section1 = () => {
         </div> */}
       </div>
     </div>
+  );
+};
 
-  )
-}
-
-export default Section1
+export default Section1;
